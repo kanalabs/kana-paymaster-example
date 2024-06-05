@@ -1,0 +1,38 @@
+{
+  "name": "paymaster-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.17.0",
+    "@aptos-labs/wallet-adapter-ant-design": "^2.4.3",
+    "@aptos-labs/wallet-adapter-react": "^3.0.3",
+    "@kanalabs/paymaster-sdk": "^0.1.0",
+    "@martianwallet/aptos-wallet-adapter": "^0.0.5",
+    "@pontem/wallet-adapter-plugin": "^0.2.1",
+    "@rise-wallet/wallet-adapter": "^0.1.2",
+    "antd": "^5.17.4",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^16.4.5",
+    "fewcha-plugin-wallet-adapter": "^0.1.3",
+    "next": "14.2.3",
+    "petra-plugin-wallet-adapter": "^0.4.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

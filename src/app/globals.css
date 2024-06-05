@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.buy-button {
+  border: none;
+  background: linear-gradient(180deg, #2ed3b7 0%, #2ed3b7 100%);
+  border-radius: 1rem;
+  padding: 0.5px 0.5px 4px 0.5px;
+  box-shadow: 0px 4px 4px 0px rgba(9, 13, 20, 0.12),
+    -2px -2px 4px 0px rgba(224, 224, 255, 0.02),
+    0px 1px 2px 0px rgba(9, 13, 20, 0.24), 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(56px);
+  z-index: 0 !important;
+}
+
+.buy-button-light {
+  border: none;
+  background: linear-gradient(180deg, #2ed3b7 0%, #2ed3b7 100%);
+  border-radius: 1rem;
+  padding: 0.5px 0.5px 4px 0.5px;
+  box-shadow: 0px 4px 4px 0px rgba(9, 13, 20, 0.12),
+    -2px -2px 4px 0px rgba(224, 224, 255, 0.02),
+    0px 1px 2px 0px rgba(9, 13, 20, 0.24), 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(56px);
+  z-index: 0 !important;
+}
+
+.buy-button-inner {
+  margin: 1px;
+  background: var(--topbar-buttons, #1d1e20);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  z-index: 0 !important;
+}
+
+.buy-button-inner-light {
+  margin: 1px;
+  background: var(--topbar-buttons, #fff);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  z-index: 0 !important;
+}
+.paymaster-bg {
+  background-image: url("./assest/paymasterbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.paymaster-bg-connected {
+  background-image: url("./assest/paymasterbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Main scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Increased width for better visibility */
+  height: 3px; /* Increased height for better visibility */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker handle on hover */
+  /* More subtle background for the track */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.highlight-link {
+  color: #1a73e8; /* This is a blue color, you can change it to any color you prefer */
+  text-decoration: underline;
+}
+
+.highlight-link:hover {
+  color: #1558b0; /* Darker blue for hover effect */
+}
+
+
