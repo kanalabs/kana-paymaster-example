@@ -12,7 +12,7 @@
     "@aptos-labs/ts-sdk": "^1.17.0",
     "@aptos-labs/wallet-adapter-ant-design": "^2.4.3",
     "@aptos-labs/wallet-adapter-react": "^3.0.3",
-    "@kanalabs/paymaster-sdk": "^0.1.0",
+    "@kanalabs/paymaster-sdk": "^0.1.1",
     "@martianwallet/aptos-wallet-adapter": "^0.0.5",
     "@pontem/wallet-adapter-plugin": "^0.2.1",
     "@rise-wallet/wallet-adapter": "^0.1.2",
